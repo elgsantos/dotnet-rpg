@@ -13,9 +13,14 @@ namespace dotnet_rpg.Controllers
             new Character { Name="Sam" }
         };
 
-        [HttpGet]
+        [HttpGet("GetAll")]
         public ActionResult<List<Character>> Get(){
             return Ok(characters);
+        }
+
+        [HttpGet]
+        public ActionResult<Character> GetSingle(){
+            return Ok(characters[0]);
         }
     }
 }
