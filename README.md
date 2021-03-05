@@ -9,3 +9,10 @@
 * Run: `dotnet run`
 * Watch: `dotnet watch run`
 * Clear: `dotnet clear`
+* Help: `dotnet -h`
+
+### Entity Framework commands
+* Help: `dotnet ef`
+* Migrations: 
+  * add: `dotnet ef migrations add MigrationName`
+  * run: `dotnet ef database update`
